@@ -1,0 +1,125 @@
+.title-port {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $textcolor;
+  }
+  
+  .filter-button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #f5f4fa;
+    color: $textcolor;
+  
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0px;
+    padding: 6px 22px;
+    display: inline-block;
+  
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .filter-button:hover,
+  .filter-button:focus {
+    color: $backgroundcolor;
+    background: $accentcolor;
+  }
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .fltr-btn-item {
+    display: inline-block;
+    justify-content: center;
+  }
+  .fltr-btn-item:not(:first-child){
+    margin-left: 6px;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .port-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  .port-link{
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .port-overlay,
+  &:focus .port-overlay{
+    transform: translateY(0%);
+  }
+  
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  }
+  .port-sub {
+    background-color: $backgroundcolor;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    box-sizing: border-box;
+  
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .text-port {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $adresscolor;
+  
+    margin-top: 4px;
+  }
+  .card-fix{
+  position: relative;
+  overflow:hidden
+  
+  }
+  .port-overlay{
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-right: 24px;
+  padding-left: 24px;
+  
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  }
+  
+  .overlay-text{
+    font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: $backgroundcolor;
+  }
+  
+  

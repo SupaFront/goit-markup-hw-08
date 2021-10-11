@@ -1,0 +1,39 @@
+@import "./utils/variables.scss";
+@import "./utils/visually-hidden.scss";
+/*==COMPONENTS===*/
+
+
+@import "./components/button.scss";
+@import "./components/logo.scss";
+@import "./components/social-links";
+@import "./components/titles.scss";
+@import "./components/links.scss";
+@import "./components/lists.scss";
+@import "./components/navigation.scss";
+@import "./components/header-contacts.scss";
+@import "./base/container.scss";
+@import "./base/section-padding.scss";
+@import "./base/common.scss";
+
+
+/*===HEADER===*/
+
+@import "./layout/header.scss";
+/*===HERO===*/
+@import "./layout/hero.scss";
+/*==ADVANTAGES===*/
+@import "./layout/advantages.scss";
+/*===GALLERY===*/
+@import "./layout/gallery.scss";
+/*===TEAM===*/
+@import "./layout/team.scss";
+/*===CLIENTS===*/
+@import "./layout/clients.scss";
+/*===FOOTER===*/
+@import "./layout/footer/footer.scss";
+@import "./layout/footer/email-form.scss";
+/*===PORTFOLIO===*/
+@import "./layout/portfolio.scss";
+/*===BACKDROP-MODAL===*/
+@import "./layout/backdrop/backdrop.scss";
+@import "./layout/backdrop/modal.scss";

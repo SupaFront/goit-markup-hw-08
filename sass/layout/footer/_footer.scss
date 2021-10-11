@@ -1,0 +1,92 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+  }
+  
+  .contact-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .contact-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    display: inline-block;
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus {
+    color: $accentcolor;
+  }}
+  .footer-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .logo-adress{
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .flex-half{
+    align-items: baseline;
+    flex-basis: calc((100% - 30px) / 2);
+    display: flex;
+    justify-content: space-between;
+  }
+  .map-adress {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $backgroundcolor;
+    display: inline-block;
+  }
+  .footer-soc-title{
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $backgroundcolor;
+  }
+
+  .footer-soc-links{
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .soc-links-list-foot {
+    display: inline-flex;
+  }
+  .soc-link-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .soc-icon-foot {
+    fill:#ffffff; 
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .soc-item-foot:not(:last-child) {
+    margin-right: 10px;
+  }
+  .soc-link-foot:hover,
+  .soc-link-foot:focus {
+    background-color: $accentcolor;
+  }
+  .soc-link-foot:hover .soc-icon,
+  .soc-link-foot:focus .soc-icon{
+    fill: $backgroundcolor;
+    }
