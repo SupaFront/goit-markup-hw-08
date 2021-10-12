@@ -1,57 +1,78 @@
 .section-advantages {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
     padding-top: 94px;
     padding-bottom: 47px;
   }
-  
-  .advantage-item {
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 120px) / 4);
-  }
-  .advantage-item::before {
+}
+
+.advantage-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+  flex-wrap: wrap;
+}
+.advantage-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 30px * var(--flex-item)) / var(--flex-item));
+  --flex-item: 1;
+
+  &::before {
     display: inline-block;
     content: "";
-    width: 270px;
     height: 120px;
+    width: 100%;
     border-radius: 4px;
-    background-size: contain;
+    background-size: 70px 70px;
+    background-color: #f5f4fa;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
   }
-  .icon-antenna::before {
-    background-image: url(../images/antenna.svg);
+  @media screen and(min-width:768px) {
+    --flex-item: 2;
   }
-  .icon-clock::before {
-    background-image: url(../images/clock.svg);
+  @media screen and(min-width:1200px) {
+    --flex-item: 4;
   }
-  .icon-diagram::before {
-    background-image: url(../images/diagram.svg);
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.advantage-titles {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $textcolor;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
   }
-  .icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
-  }
-  .advantage-list {
-    display: flex;
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-  .advantage-titles {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $textcolor;
-    display: block;
-    margin-bottom: 10px;
-  }
-  .advantage-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $adresscolor;
-  }
+}
+.advantage-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $adresscolor;
+}

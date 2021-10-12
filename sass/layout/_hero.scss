@@ -1,40 +1,71 @@
+.section-hero {
+  padding: 118px 0;
+  background-color: #2f303a;
+  background-image: url(../images/hero/mobile-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/hero/hero-mobile2x.jpg);
+  }
 
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/tablet-hero.jpg);
 
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/hero/hero-tablet2x.jpg);
+    }
+  }
 
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero/desktop-hero.jpg);
+    padding: 200px 0;
 
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/hero/hero-desktop2x.jpg);
+      padding: 200px 0;
+    }
+  }
+}
 
+.headline {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 370px;
+}
 
+@media screen and (min-width: 1200px) {
+  .headline {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+}
+.title-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  min-height: 164px;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .title-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
+    min-height: 200px;
+  }}
 
-
-
-// .section-hero {
-//     background-color: #2f303a;
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url(../images/hero-image.jpg);
-//     padding: 200px 0;
-//     text-align: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//   }
-//   .title-wrap {
-//     margin-left: auto;
-//     margin-right: auto;
-//     max-width: 696px;
-//     min-height: 200px;
-//   }
-//   .headline {
-//     font-style: normal;
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.36;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     color: $backgroundcolor;
-//     margin-bottom: 30px;
-//   }
+.hero-button{
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

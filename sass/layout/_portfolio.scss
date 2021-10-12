@@ -16,6 +16,7 @@
     letter-spacing: 0.03em;
     background-color: #f5f4fa;
     color: $textcolor;
+    margin-top: 15px;
   
     border-radius: 4px;
     cursor: pointer;
@@ -32,8 +33,15 @@
   }
   .filter-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin-bottom: 50px;
+    margin-top: -15px;
+
+    @media screen and (min-width:768px) {
+      justify-content:center
+      
+    }
   }
   
   .fltr-btn-item {
@@ -52,33 +60,55 @@
   .port-item {
     margin-left: 30px;
     margin-top: 30px;
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 30px * var(--flex-item)) / var(--flex-item));
+    --flex-item: 1;
+    
+
+    @media screen and(min-width:768px) {
+      --flex-item:2;
+     }
+     @media screen and(min-width:1200px) {
+       --flex-item:3;
+     }
   }
   .port-link{
+    height: 100%;
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (min-width:768px) and (max-width:1199px){
+      display: flex;
+      flex-direction: column;
+    }
+
 
     &:hover .port-overlay,
-  &:focus .port-overlay{
+    &:focus .port-overlay{
     transform: translateY(0%);
-  }
+    }
   
-  &:hover,
-  &:focus {
+    &:hover,
+    &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
   }
-  }
+
   .port-sub {
     background-color: $backgroundcolor;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     box-sizing: border-box;
-  
+    flex-grow: 1;
+
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      flex-grow: 1;
+    }
   }
   .text-port {
     font-style: normal;
