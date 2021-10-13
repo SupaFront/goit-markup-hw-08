@@ -185,11 +185,13 @@ flex-wrap: wrap;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 60px;
       }
       @media screen and(max-width:1199px) {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 60px;
     
     }
     @media screen and(min-width:1200px){
@@ -212,7 +214,7 @@ flex-wrap: wrap;
       text-transform: uppercase;
       color: $backgroundcolor;
       margin-bottom: 20px;
-      margin-top: 60px;
+      
       
     }
     .footer-email-form {

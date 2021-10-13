@@ -13,6 +13,10 @@
 .mobile-menu-close-btn {
   padding: 11px;
 }
+.mobile-menu-close-btn:hover .mobile-menu-close-icon,
+.mobile-menu-close-btn:focus .mobile-menu-close-icon{
+  fill: $accentcolor;
+}
 
 .mobile-menu {
   position: fixed;
@@ -74,9 +78,10 @@
 
 .mobile-menu__contacts {
   margin-bottom: 64px;
+  padding-inline-start: 0;
 }
 
-.mobile-menu__contact-link {
+.mobile-menu__contact-link{
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
@@ -84,11 +89,15 @@
   text-decoration: none;
 
   color: $adresscolor;
+
+  &.first{
+    font-size: 40px;
+  }
 }
 
 .mobile-menu__contact-link:hover,
 .mobile-menu__contact-link:focus {
-  font-size: 40px;
+  
   text-decoration: none;
 
   color: $accentcolor;
@@ -143,4 +152,8 @@
   .mobile-menu {
     display: none;
   }
+}
+.mobile-menu-button:hover .mobile-menu-button__icon,
+.mobile-menu-button:focus .mobile-menu-button__icon{
+  fill: $accentcolor;
 }
