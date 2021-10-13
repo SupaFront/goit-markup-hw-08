@@ -3,7 +3,7 @@
 }
 
 .modal {
-  height: 581px;
+  
   width: 528px;
   max-height: 96vh;
   background-color: $backgroundcolor;
@@ -13,6 +13,10 @@
   transform: translate(-50%, -50%) rotate(0deg);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  @media  screen and(max-width:1200px) {
+    width: 450px;
+    
+  }
 }
 
 .btn-close-modal {
@@ -45,6 +49,10 @@
   letter-spacing: 0.03em;
   color: $textcolor;
   margin-bottom: 12px;
+  @media screen and (max-width:1199px){
+
+    line-height: 1.5;
+  }
 }
 
 .form-modal-all {
@@ -142,6 +150,11 @@
   padding-left: 12px;
 
   color: $adresscolor;
+
+  @media screen and(max-width:1199px) {
+    line-height: 1.67;
+    font-size: 12px;
+  }
 }
 
 .policy-link {
