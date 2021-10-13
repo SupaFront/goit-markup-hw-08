@@ -1173,6 +1173,12 @@ p {
   margin-left: 12px;
 }
 
+@media screen and (min-width: 1200px) {
+  .email-submit-btn {
+    margin-top: 0;
+  }
+}
+
 .email-submit-btn:after {
   content: "";
   background-image: url(../images/send-form.svg);

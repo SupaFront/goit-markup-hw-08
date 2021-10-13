@@ -265,6 +265,9 @@ flex-wrap: wrap;
       padding-right: 59px;
       margin-top: 20px;
       margin-left: 12px;
+      @media screen and (min-width:1200px) {
+        margin-top: 0;
+      }
     }
     .email-submit-btn:after {
       content: "";
